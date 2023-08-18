@@ -10,6 +10,7 @@ sudo pacman -S steam
 sudo pacman -S discord
 yay -S obs-studio
 yay -S v4l2loopback-dkms
+yay -S protonup-qt
 echo Enabling NetworkManger and Sddm...
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
