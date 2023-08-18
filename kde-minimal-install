@@ -8,6 +8,7 @@ yay -S spotify
 sudo pacman -S chromium
 sudo pacman -S steam 
 sudo pacman -S discord
+sudo pacman -S xorg-xkill
 yay -S obs-studio
 yay -S v4l2loopback-dkms
 yay -S protonup-qt
