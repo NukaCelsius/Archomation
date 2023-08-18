@@ -1,1 +1,11 @@
-
+echo Installing the dependencies..
+pacman -Syu.
+sudo pacman -S --needed base-devel git
+echo Cloning the repo...
+git clone https://aur.archlinux.org/yay.git
+cd yay
+echo Building the package...
+makepkg -si
+echo Done yay should be installed!!
+echo Verifying install yay version should appear here:
+yay --version
