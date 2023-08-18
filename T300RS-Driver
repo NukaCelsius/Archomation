@@ -1,0 +1,15 @@
+echo Source: https://github.com/Kimplul/hid-tmff2
+read -p "Plug the wheel into the computer and press [Enter] key to continue."
+echo Installing linux-headers, git and make.
+sudo pacman -S linux-headers
+sudo pacman -S git
+sudo pacman -S make
+read -p "Unplug the wheel from the computer and press [Enter] key to continue."
+cd -
+git clone --recurse-submodules https://github.com/Kimplul/hid-tmff2.git
+cd hid-tmff2
+make
+sudo make install
+sudo ./dkms-install.sh
+read -p "Plug wheel back in and press [Enter] key to continue."
+echo Done! reboot not strictly necessary, but definitely recommended.
