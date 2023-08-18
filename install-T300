@@ -12,5 +12,7 @@ cd hid-tmff2
 make
 sudo make install
 sudo ./dkms-install.sh
+echo Installing oversteer...
+yay -S oversteer
 read -p "Plug wheel back in and press [Enter] key to continue."
 echo Done! reboot not strictly necessary, but definitely recommended.
