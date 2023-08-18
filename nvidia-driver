@@ -1,4 +1,4 @@
 echo upgrading system...
 pacman -Syu
-sudo pacman nvidia nvidia-settings nvidia-libgl lib32-nvidia-libgl
+sudo pacman -S nvidia nvidia-settings nvidia-libgl lib32-nvidia-libgl
 echo done! reboot your system.
