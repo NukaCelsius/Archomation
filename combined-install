@@ -30,4 +30,24 @@ yay -S oversteer
 read -p "Plug wheel back in and press [Enter] key to continue."
 echo Done! reboot not strictly necessary, but definitely recommended.
 
+echo updating system and installing minimal plasma...
+sudo pacman -Syuu
+sudo pacman -S plasma-desktop
+sudo pacman -S sddm 
+sudo pacman -S firefox plasma-nm plasma-pa dolphin konsole kdeplasma-addons kde-gtk-config
+echo installing extras...
+yay -S spotify
+sudo pacman -S chromium
+sudo pacman -S steam 
+sudo pacman -S discord
+sudo pacman -S xorg-xkill
+yay -S obs-studio
+yay -S v4l2loopback-dkms
+yay -S protonup-qt
+echo Enabling NetworkManger and Sddm...
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
+sudo systemctl enable sddm
+echo Done! Reboot your system to start into the login manager...
+
 
