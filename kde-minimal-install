@@ -1,0 +1,15 @@
+echo updating system and installing minimal plasma...
+sudo pacman -Syuu
+sudo pacman -S plasma-desktop
+sudo pacman -S sddm 
+sudo pacman -S firefox plasma-nm plasma-pa dolphin konsole kdeplasma-addons kde-gtk-config
+echo installing extras...
+yay -S spotify
+sudo pacman -S chromium
+sudo pacman -S steam 
+sudo pacman -S discord
+echo Enabling NetworkManger and Sddm...
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
+sudo systemctl enable sddm
+echo Done! reboot your system to start into the login manager...
