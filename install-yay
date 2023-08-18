@@ -1,5 +1,5 @@
-echo Installing the dependencies..
-pacman -Syu.
+echo Installing the dependencies...
+pacman -Syu
 sudo pacman -S --needed base-devel git
 echo Cloning the repo...
 git clone https://aur.archlinux.org/yay.git
