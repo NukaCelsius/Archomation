@@ -1,5 +1,5 @@
 echo Source: https://github.com/Kimplul/hid-tmff2
-read -p "IMPORTANT MESSAGE!! If you have not ran the yay script make sure you run it before running this script if you have not installed yay press control-c and run the install-yay script first if you have installed yay press the [Enter] key to continue...
+read -p "IMPORTANT MESSAGE!! If you have not ran the yay script make sure you run it before running this script if you have not installed yay press control-c and run the install-yay script first if you have installed yay press the [Enter] key to continue..."
 read -p "Plug the wheel into the computer and press [Enter] key to continue."
 echo Installing linux-headers, git and make.
 pacman -Syu
@@ -16,4 +16,4 @@ sudo ./dkms-install.sh
 echo Installing oversteer...
 yay -S oversteer
 read -p "Plug wheel back in and press [Enter] key to continue."
-echo Done! reboot not strictly necessary, but definitely recommended.
+echo Done! reboot not strictly necessary, but definitely recommended
